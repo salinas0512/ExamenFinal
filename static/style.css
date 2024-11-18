@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h2 {
+    color: #494949;
+    text-align: center;
+    margin-top: 0;
+}
+.formulario2{
+    width : 100%;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    padding: 35px;
+    max-width: 390px;
+    top:0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.formulario2 input{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+div {
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    padding: 35px;
+    max-width: 500px;
+    top:0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form label {
+    text-align: center;
+    color: #6a6a6a;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: normal;
+}
+form input{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 8px ;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+
+button{
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#boton1 {
+    background-color: #d100b8;
+    border: none;
+    color: white;
+    padding: 45px 25px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 7px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+#boton2 {
+    background-color: #7cda04;
+    border: none;
+    color: white;
+    padding:45px 25px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 7px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+button:hover{
+    background-color: #2990fe;
+}
+#boton1:hover {
+    background-color: #f617db;
+}
+#boton2:hover {
+    background-color: #8df00f;
+}
+.resultado {
+    margin-top: 5px;
+    padding:4px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-align: left;
+}

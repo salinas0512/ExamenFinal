@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='world.png') }}" type="image/png">
+</head>
+<body>
+   <div>
+       <h2>Cálculo de Compras</h2>
+       <form method="POST">
+    <!-- Campo para nombre -->
+    <label for="nombre1">Ingresa tu nombre</label>
+    <input type="text" id="nombre1" name="nombre1" required value="{{ nombre1 }}" >
+    <br><br>
+
+    <!-- Campo para edad -->
+    <label for="edad1">Ingresa tu edad</label>
+    <input type="number" id="edad1" name="edad1" required value="{{ edad1 }}" >
+    <br><br>
+
+    <!-- Campo para tarro de pintura -->
+    <label for="tarro_pintura">Ingresa la cantidad de tarros de pintura a comprar</label>
+    <input type="number" id="tarro_pintura" name="tarro_pintura" required value="{{ tarro_pintura }}">
+    <br><br>
+
+    <!-- Botón para enviar el formulario -->
+    <button type="submit">Calcular</button>
+       </form>
+       {% if resultado %}
+        <p>{{ resultado|safe }}</p>
+       {% endif %}
+   </div>
+</body>
+</html>

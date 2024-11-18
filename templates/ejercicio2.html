@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='world.png') }}" type="image/png">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+   <div class="formulario2">
+       <h2>Inicio de sesión</h2>
+       <form method="POST">
+    <!-- Campo para usuario -->
+    <label for="usuario">Ingresa tu nombre:</label>
+    <input type="text" id="usuario" name="usuario" required value="{{usuario}}">
+    <br><br>
+
+    <!-- Campo para contraseña -->
+    <label for="contrasena">Ingresa tu contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" required value="{{contrasena}}">
+    <br><br>
+           <!-- Botón para enviar el formulario -->
+    <button type="submit">Verificar</button>
+       </form>
+       {% if mensaje %}
+        <p>{{ mensaje}}</p>
+       {% endif %}
+   </div>
+</body>
+</html>
